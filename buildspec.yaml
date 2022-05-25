@@ -24,7 +24,7 @@ phases:
     - echo Pushing docker image
     - docker push $IMAGE_URI
     - echo push completed
-    - printf '[{"name":"%s","imageUri":"%s"}]'  "PaymentService" $IMAGE_URI > imagedefinitions.json
+    - printf '[{"name":"%s","imageUri":"%s"}]'  "pament-cicd-container" $IMAGE_URI > imagedefinitions.json
 artifacts:
   files:
   - imagedefinitions.json
